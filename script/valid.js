@@ -4,7 +4,7 @@ function validate() {
 
 	if(username == 'luna' && password == 'sangre')
 	{
-		indow.location.replace("./home.html");
+		Window.location.replace("./home.html");
 	} else {
 		alert ('login failed');
 	}
