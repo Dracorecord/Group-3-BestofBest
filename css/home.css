@@ -12,19 +12,19 @@
 
 .navbar-brand {
     margin-left: 50px;
-    color: yellow;
+    color: #ffc107;
 }
 
 #menu-color {
-    background-color: yellow;
+    background-color: #ffc107;
 }
 
 .navbar-brand:hover {
-    color: red;
+    color: #fb2525;
 }
 
 #navbar-color {
-    background-color: black;
+    background-color: #000;
 }
 
 .navbar-nav {
@@ -35,23 +35,23 @@
 }
 
 #first {
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #ffc107;
 }
 
 .nav-link {
-    color: white;
+    color: #fff;
     font-weight: bold;
     transition: 0.3s ease;
     font-family: 'Abel', sans-serif;
 }
 
 .nav-link:hover {
-    background-color: yellow;
+    background-color: #ffc107;
     border-radius: 5px;
     box-shadow: -5px 12px 21px -5px  rgb(11, 212, 145);
     -webkit-box-shadow: -5px 12px 21px -5px  rgb(11, 212, 145);
     -moz-box-shadow: -5px 12px 21px -5px  rgb(11, 212, 145);
-    color: black;
+    color: #000;
 }
 
 .main-content {
@@ -72,7 +72,7 @@
 .content {
     padding-top: 160px;
     margin-left: 50px;
-    color: white;
+    color: #fff;
 }
 .content h1 {
     font-size: 70px;
@@ -91,19 +91,19 @@
     margin-top: 20px;
     letter-spacing: 3px;
     font-weight: bold;
-    background-color: yellow;
+    background-color: #ffc107;
     border: none;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 #btn1 button:hover {
-    background-color: red;
+    background-color: #fb2525;
     border-radius: 5px;
-    box-shadow: -5px 12px 21px -5px  yellow;
-    -webkit-box-shadow: -5px 12px 21px -5px  yellow;
-    -moz-box-shadow: -5px 12px 21px -5px  yellow;
-    color: white;
+    box-shadow: -5px 12px 21px -5px  #ffc107;
+    -webkit-box-shadow: -5px 12px 21px -5px  #ffc107;
+    -moz-box-shadow: -5px 12px 21px -5px  #ffc107;
+    color: #fff;
 }
 
 @media screen and (max-width: 750px) {
