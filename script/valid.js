@@ -5,6 +5,7 @@ function validate() {
 	if(username == 'luna' && password == 'sangre')
 	{
 		alert ('login Success');
+		window.location.href = "./home.html";
 	} else {
 		alert ('login failed');
 	}
