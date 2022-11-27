@@ -1,63 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lexend:wght@400;500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lexend:wght@400;500&family=Montserrat:ital,wght@0,400;1,800&family=Poppins&family=Quicksand&family=Raleway&family=Roboto&family=Zhi+Mang+Xing&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
-    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#logo-color i img {
-    width: 50px;
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar-brand {
-    margin-left: 50px;
-    color: #ffc107;
-}
-
-#menu-color {
-    background-color: #ffc107;
-}
-
-.navbar-brand:hover {
-    color: #fb2525;
-}
-
-#navbar-color {
-    background-color: #000;
-}
-
-.navbar-nav {
-    margin-left: 10px;
-}
-.nav-item {
-    margin-left: 10px;
-}
-
-#first {
-    border-bottom: 2px solid #ffc107;
-}
-
-.nav-link {
-    color: #fff;
-    font-weight: bold;
-    transition: 0.3s ease;
+body {
+    font-size: 18px;
     font-family: 'Abel', sans-serif;
 }
 
-.nav-link:hover {
-    background-color: #ffc107;
-    border-radius: 5px;
-    box-shadow: -5px 12px 21px -5px  rgb(11, 212, 145);
-    -webkit-box-shadow: -5px 12px 21px -5px  rgb(11, 212, 145);
-    -moz-box-shadow: -5px 12px 21px -5px  rgb(11, 212, 145);
-    color: #000;
+/* Header part */
+.header-area {
+    background: #000;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 999;
+    border-bottom: #fff;
 }
 
-.main-content {
+/* Inside the header */
+.header-container {
     width: 100%;
-    height: 96vh;
-    background-image: url(https://www.itl.cat/pngfile/big/114-1141438_landscape-portrait-steak.jpg);
+    margin: auto;
+    display: table;
+    background-color: #000;
+}
+
+.site-logo {
+    float: left;
+    font-family: 'Lexend', sans-serif;
+}
+
+.site-logo a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 550;
+    padding: 15px;
+    font-style: italic;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo span {
+    color: #fb2525;
+    font-family: 'Poppins', sans-serif;
+}
+
+#site-logo-color i img {
+    width: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Menu Bar */
+.mobile-nav {
+    display: none;
+}
+
+.site-nav-menu {
+    float: right;
+    padding-top: 10px;
+}
+
+.primary-menu {
+    list-style: none;
+}
+
+/* Nag-line na 'yong list in a row */
+.primary-menu li {
+    display: inline-block;
+    margin: 21px 5px;
+}
+
+.primary-menu a {
+    color: #ffc107;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+    transition: 0.5s;
+}
+
+.primary-menu a:hover,
+.primary-menu .active {
+    color: #fb2525;
+}
+
+
+/* Red underline in this part */
+.primary-menu li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #fb2525;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.primary-menu li a:hover:after {
+    width: 100%;
+    color: #fb2525;
+}
+
+.primary-menu li .active:after {
+    width: 100%;
+    color: #fb2525;
+}
+
+/*  Wala pang menu bar here */
+.mobile-nav {
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.itl.cat/pngfile/big/114-1141438_landscape-portrait-steak.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 30%;
 }
@@ -74,25 +150,27 @@
     margin-left: 50px;
     color: #fff;
 }
+
 .content h1 {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content h2 {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 20px;
 }
 #btn1 button {
     width: 200px;
     height: 35px;
     margin-top: 20px;
-    letter-spacing: 3px;
     font-weight: bold;
     background-color: #ffc107;
     border: none;
+    letter-spacing: 3px;
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -100,16 +178,56 @@
 #btn1 button:hover {
     background-color: #fb2525;
     border-radius: 5px;
-    box-shadow: -5px 12px 21px -5px  #ffc107;
-    -webkit-box-shadow: -5px 12px 21px -5px  #ffc107;
-    -moz-box-shadow: -5px 12px 21px -5px  #ffc107;
-    color: #fff;
+    box-shadow: 1px 10px 10px -10px  #ffc107;
+    -webkit-box-shadow: 1px 10px 10px -10px  #ffc107;
+    -moz-box-shadow: 1px 12px 10px -10px  #ffc107;
+    color: white;
+    letter-spacing: 6px;
 }
 
-@media screen and (max-width: 750px) {
+.main-content-none {
+    display: none;
+}
+
+/* Responsive CSS */
+
+@media only screen  and (max-width: 766px) {
+    .site-nav-menu {
+        float: none;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        left: 0;
+        top: 85px;
+        padding: 30px 0px 19px 0px;
+        border-top: 2px solid #fb2525;
+        /* Clip path kung saan ilalagay ang menu */
+        clip-path: circle(0% at 50% 0%);
+        transition: all 0.5s;
+    }
+
+    /* Nawala ang li rito na part */
+    .primary-menu li {
+        display: block;
+        text-align: center;
+        margin: 25px 5px;
+        font-size: 25px;
+    }
+    /* Menu bar lumabas na rito */
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu {
+        clip-path: circle(112% at 99% 0%);
+    }
+    .primary-menu li a:after {
+        display: none;
+    }
+
     .main-content {
         width: 100%;
-        height: 96vh;
+        height: 100vh;
         background-image: url(https://media.istockphoto.com/id/1169868287/photo/rustic-farmhouse-rump-steak.jpg?s=612x612&w=0&k=20&c=dCKHgfmFyforPPW4jqAp7NmXu4lwgoSTJViL_IIjrvk=);
         background-size: cover;
         background-position: 70%;
@@ -119,16 +237,21 @@
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
         width: 100%;
-        height: 96vh;
+        height: 100vh;
     }
     .content {
-        padding: 0;
+        padding-top: 250px;
     }
     .content h1 {
         font-family: 'Roboto', sans-serif;
+        font-size: 100px;
     }
     
     .content h2 {
         font-family: 'Lexend', sans-serif;
+        font-size: 50px;
     }
 }
+
+
+
