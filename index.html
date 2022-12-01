@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group 3</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Team Sangre</title>
+	<link rel="shortcut icon" type="image" href="./images/LaLunaSteak.png">
+	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <h1>Restaurant</h1>
-    
+	<div class="box">
+		<div class="form">
+				<img src="./images/LaLunaSteak.png" class="logo">
+				<h2>Log In</h2>
+				<div class="inputBox">
+					<input type="text"  id="username" required="required">
+					<span>Username</span>
+					<i></i>
+				</div>
+				<div class="inputBox">
+					<input type="password" id="password" required="required">
+					<span>Password</span>
+					<i></i>
+				</div>
+				<div class="links">
+					<a href="">Forgot Password</a>
+					<a href="">Create Account</a>
+				</div>
+				<input type="submit" value="Login" onclick="validate()">
+			
+		</div>
+	</div>
+	<script src="./script/valid.js"></script>
 </body>
 </html>

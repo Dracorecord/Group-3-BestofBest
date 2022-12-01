@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Sangre</title>
+
+    <!-- Img logo -->
+    <link rel="shortcut icon" type="image" href="./images/LaLunaSteak.png">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CCS FILE -->
+    <link rel="stylesheet" href="./css/home.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#" id="site-logo-color"><i><img src="./images/LaLunaSteak.png" alt=""></i>La<span>Luna</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="">Menu</a></li>
+                    <li><a href="#" class="">About Us</a></li>
+                    <li><a href="#" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Home -->
+    <div class="main-content">
+        <div class="content1">
+            <div class="content">
+            <h1>BEST DEAL</h1>
+            <h2>STEAK</h2>
+            <div id="btn1"><button>Order Now</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery CDN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- code na need para paganahin siya -->
+    <script>
+        $(".mobile-nav i").click(function(){
+            $(".site-nav-menu").toggleClass("mobile-menu");
+        })
+    </script>
+</body>
+</html>
