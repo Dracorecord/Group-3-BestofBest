@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgb(253, 253, 170);
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.accordion .accordion-body:hover {
+    font-weight: bold;
+    color: black;
+    background: rgb(247, 247, 171);
+    background-blend-mode: luminosity;
+}
+
+.accordion .button:hover {
+    color: white;
+}
+
+.accordion {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 15%;
+}
+
+/* 
+.bestChefs {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    float: left;
+    padding: 5px;
+    margin: 1px;
+}
+
+.chef::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ */
+
+
+
+
+
+.flip-box {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: rgb(73, 66, 3);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+  .flip-box2 {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  
+  .flip-box-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box2:hover .flip-box-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front2, .flip-box-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front2 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back2 {
+    background-color: rgb(73, 66, 3);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+  .flip-box3 {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  
+  .flip-box-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box3:hover .flip-box-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front3, .flip-box-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front3 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: rgb(73, 66, 3);
+    color: white;
+    transform: rotateY(180deg);
+  }
