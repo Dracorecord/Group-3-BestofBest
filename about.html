@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/about.css">
+
+    <title>About Us</title>
+
+
+</head>
+
+<body class="bg-black">
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./images/steakVideo.mp4" type="video/mp4">
+    </video>
+
+
+
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">La Luna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--NavBar End -->
+
+
+    <!-- accordion Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center m-5 text-white">
+                <h1 class="names">About Us</h1>
+            </div>
+            <div class="col-md-4">
+                <img src="./images/laLunaSteak.png" class="img-fluid" alt="porterhouse">
+            </div>
+            <div class="col-8 ">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item text-bg-dark">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Our Traditions
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>La Luna Steak House </strong> is Radically Traditional Farming. Every day, we
+                                butcher meat from animals raised in
+                                a regenerative manner using humane animal management practices. This is no easy task,
+                                but it is our
+                                passion. To operate our vertically integrated, zero-waste model, it takes 155+ caring
+                                people working
+                                together to accomplish a common goal: taking care of our land and our livestock.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item text-bg-dark">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-bg-dark" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Our Transition
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Starting in <strong>1995</strong>, we transitioned away from industrial agriculture
+                                techniques and began operating our farm as a living ecosystem. We now raise 10 species
+                                of humanely treated animals living in symbiotic relationships with each other. Our lands
+                                are holistically managed to become increasingly a living organic medium that is teeming
+                                with life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item text-bg-dark">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-bg-dark" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Our Commitment
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>La Luna Steak House</strong> is a Zero-Waste farm. We sell the meats and poultry
+                                we butcher on our farm to passionate consumers who care about the animals, land and the
+                                community. The hides from the cattle we slaughter are dried for pet chew rawhides or
+                                tanned and crafted into leather goods. The fat from our cattle is rendered down to
+                                create some of the purest tallow products available. The inedible viscera is composted
+                                to later be spread on our farm as rich organic matter to fertilize our soil.
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="accordion-item text-bg-dark">
+                        <h2 class="accordion-header" id="headingfour">
+                            <button class="accordion-button collapsed text-bg-dark" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                                aria-controls="collapsefour">
+                                Values & Certifications
+                            </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                We are fiercely committed to the well-being of our animals, as well as the quality of
+                                meat we provide to our customers. We honor that commitment by treating our animals with
+                                dignity and respect from the day they are born throughout their entire lives, including
+                                the day they are slaughtered.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- accordion end -->
+
+                <!--   carousel start -->
+
+            </div>
+            <div class="Specialties text-center m-5 text-white">
+                <h1 class="names">Our Specialties</h1>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/photo1.jpeg" class="d-block w-100" alt="photo1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/photo2.jpg" class="d-block w-100" alt="photo2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/photo3.jpg" class="d-block w-100" alt="photo3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- carousel end -->
+
+
+            <!-- Map Start -->
+            <div class="brances text-center m-5 text-white">
+                <h1 class="names">Luxurious Branches</h1>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30900.720077942136!2d121.03622139240451!3d14.508209938896973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssteak%20restaurants!5e0!3m2!1sen!2sph!4v1669560863637!5m2!1sen!2sph"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="chefs text-center m-5 text-white">
+            <h1 class="names">Our Famous Chefs</h1>
+        </div>
+        <!-- <div class="chefs"></div>
+        <div class="bestChefs ">
+            <img src="./images/chef1.jpeg" class="img-fluid" alt="chef1">
+            <div class="overlay">
+                Gordon Ramsey
+            </div>
+        </div>
+        <div class="bestChefs">
+            <img src="./images/chef2.jpg" class="img-fluid" alt="chef2">
+            <div class="overlay">
+                Pierre Gagnaire
+            </div>
+        </div>
+
+        <div class="bestChefs">
+            <img src="./images/chef3.jpeg" class="img-fluid" alt="chef3">
+            <div class="overlay">
+                Joël Robuchon
+            </div>
+
+        </div>
+    </div>-->
+
+
+
+        <div class="flip1">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="./images/chef1.jpg" alt="gordon" style="width:200px;height:200px">
+                    </div>
+                    <div class="flip-box-back text-warning">
+                        <h2>Gordon Ramsay</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip2">
+                <div class="flip-box2">
+                    <div class="flip-box-inner2">
+                        <div class="flip-box-front2">
+                            <img src="./images/chef2.jpg" alt="gordon" style="width:200px;height:200px">
+                        </div>
+                        <div class="flip-box-back text-warning">
+                            <h2>Pierre Gagnaire</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip3">
+                    <div class="flip-box3">
+                        <div class="flip-box-inner3">
+                            <div class="flip-box-front3">
+                                <img src="./images/chef3.jpeg" alt="gordon" style="width:200px;height:200px">
+                            </div>
+                            <div class="flip-box-back text-warning">
+                                <h2>Joël Robuchon</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
