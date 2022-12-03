@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+}
+
+/* Header part */
+.header-area {
+  background: #000;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 999;
+  border-bottom: #fff;
+}
+
+/* Inside the header */
+.header-container {
+  width: 100%;
+  margin: auto;
+  display: table;
+  background-color: #000;
+}
+
+.site-logo {
+  float: left;
+  font-family: 'Lexend', sans-serif;
+}
+
+.site-logo a {
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 550;
+  padding: 15px;
+  font-style: italic;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-logo span {
+  color: #fb2525;
+  font-family: 'Poppins', sans-serif;
+}
+
+#site-logo-color i img {
+  width: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Menu Bar */
+.mobile-nav {
+  display: none;
+}
+
+.site-nav-menu {
+  float: right;
+  padding-top: 10px;
+}
+
+.primary-menu {
+  list-style: none;
+}
+
+/* Nag-line na 'yong list in a row */
+.primary-menu li {
+  display: inline-block;
+  margin: 21px 5px;
+}
+
+.primary-menu a {
+  color: #ffc107;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  transition: 0.5s;
+}
+
+.primary-menu a:hover,
+.primary-menu .active {
+  color: #fb2525;
+}
+
+
+/* Red underline in this part */
+.primary-menu li a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fb2525;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.primary-menu li a:hover:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+.primary-menu li .active:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+/*  Wala pang menu bar here */
+.mobile-nav {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.div {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 70px;
+    margin: 400px;
+    align-items:center;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    margin-top: 0;
+    min-width: none ;
+    max-width: 1000px;
+    }
+
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    place-items: center ;
+  }
+  .grid > article img {
+    max-width: 100%;
+    padding: 20px;
+
+  }
+  .text {
+    padding: 20px 20px 20px 20px;
+    background-color: beige;
+    font-size: 14px;
+    text-align: center;
+  }
+  .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+
+  .menu {
+
+    font-family: "Merienda One", cursive;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: #fb2525;
+    margin-top: 0;
+
+    }
+
+.best {
+      font-family: "Berkshire Swash", cursive;
+      text-align: center;
+      font-size: 40px;
+      color: #ffc107;
+      background-color: rgb(84, 84, 84);
+      text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+      margin-top: 0;
+  }
+
+.luna {
+    font-family: "Lily Script One", cursive;
+    text-align: center;
+    font-size: 100px;
+    color: #ffc107;
+    text-shadow: black;
+}
+
+.logo img {
+  max-width: 10%;
+  margin-left: 45%;
+}
+
+
+@media only screen  and (max-width: 766px) {
+  .site-nav-menu {
+      float: none;
+      position: absolute;
+      background: #000;
+      width: 100%;
+      left: 0;
+      top: 85px;
+      padding: 30px 0px 19px 0px;
+      border-top: 2px solid #fb2525;
+      /* Clip path kung saan ilalagay ang menu */
+      clip-path: circle(0% at 50% 0%);
+      transition: all 0.5s;
+  }
+
+  /* Nawala ang li rito na part */
+  .primary-menu li {
+      display: block;
+      text-align: center;
+      margin: 25px 5px;
+      font-size: 25px;
+  }
+  /* Menu bar lumabas na rito */
+  .mobile-nav {
+      display: block;
+  }
+
+  .mobile-menu {
+      clip-path: circle(112% at 99% 0%);
+  }
+  .primary-menu li a:after {
+      display: none;
+  }
+}

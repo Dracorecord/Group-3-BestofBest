@@ -1,15 +1,132 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    background-color: rgb(253, 253, 170);
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
-
+body {
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+  background: #000;
 }
+
+/* Header part */
+.header-area {
+  background: #000;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 999;
+  border-bottom: #fff;
+}
+
+/* Inside the header */
+.header-container {
+  width: 100%;
+  margin: auto;
+  display: table;
+  background-color: #000;
+}
+
+.site-logo {
+  float: left;
+  font-family: 'Lexend', sans-serif;
+}
+
+.site-logo a {
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 550;
+  padding: 15px;
+  font-style: italic;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-logo span {
+  color: #fb2525;
+  font-family: 'Poppins', sans-serif;
+}
+
+#site-logo-color i img {
+  width: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Menu Bar */
+.mobile-nav {
+  display: none;
+}
+
+.site-nav-menu {
+  float: right;
+  padding-top: 10px;
+}
+
+.primary-menu {
+  list-style: none;
+}
+
+/* Nag-line na 'yong list in a row */
+.primary-menu li {
+  display: inline-block;
+  margin: 21px 5px;
+}
+
+.primary-menu a {
+  color: #ffc107;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  transition: 0.5s;
+}
+
+.primary-menu a:hover,
+.primary-menu .active {
+  color: #fb2525;
+}
+
+
+/* Red underline in this part */
+.primary-menu li a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fb2525;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.primary-menu li a:hover:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+.primary-menu li .active:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+/*  Wala pang menu bar here */
+.mobile-nav {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
 
 .accordion .accordion-body:hover {
     font-weight: bold;
@@ -193,3 +310,38 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+  @media only screen  and (max-width: 766px) {
+    .site-nav-menu {
+        float: none;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        left: 0;
+        top: 85px;
+        padding: 30px 0px 19px 0px;
+        border-top: 2px solid #fb2525;
+        /* Clip path kung saan ilalagay ang menu */
+        clip-path: circle(0% at 50% 0%);
+        transition: all 0.5s;
+    }
+
+    /* Nawala ang li rito na part */
+    .primary-menu li {
+        display: block;
+        text-align: center;
+        margin: 25px 5px;
+        font-size: 25px;
+    }
+    /* Menu bar lumabas na rito */
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu {
+        clip-path: circle(112% at 99% 0%);
+    }
+    .primary-menu li a:after {
+        display: none;
+    }
+}
