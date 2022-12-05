@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -177,6 +179,10 @@ body {
  */
 
 
+.col-md-4{
+ 
+}
+
 
 
 
@@ -324,7 +330,7 @@ body {
         clip-path: circle(0% at 50% 0%);
         transition: all 0.5s;
     }
-
+  
     /* Nawala ang li rito na part */
     .primary-menu li {
         display: block;
@@ -344,3 +350,73 @@ body {
         display: none;
     }
 }
+
+
+
+.mt-4 .btn {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+
+
+
+
+/* Motion in the logo started */
+
+.cols-md-4 {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  transform: perspective(500px) rotateY(-42deg);
+  -webkit-transform: perspective(500px) rotateY(-42deg);
+  -moz-transform: perspective(500px) rotateY(-42deg);
+  -ms-transform: perspective(500px) rotateY(-42deg);
+  -o-transform: perspective(500px) rotateY(-42deg);
+  animation-name: rotate-windows;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.cols-md-4 {
+  background-color: #00abef00;
+  width: 400px;
+  height: 400px;
+}
+
+ @keyframes rotate-windows { 
+  0% {
+    transform: perspective(500px) rotateY(-42deg);
+    -webkit-transform: perspective(500px) rotateY(-42deg);
+    -moz-transform: perspective(500px) rotateY(-42deg);
+    -ms-transform: perspective(500px) rotateY(-42deg);
+    -o-transform: perspective(500px) rotateY(-42deg);
+  }
+  50% {
+    transform: perspective(500px) rotateY(0deg);
+    -webkit-transform: perspective(500px) rotateY(0deg);
+    -moz-transform: perspective(500px) rotateY(0deg);
+    -ms-transform: perspective(500px) rotateY(0deg);
+    -o-transform: perspective(500px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(500px) rotateY(-42deg);
+    -webkit-transform: perspective(500px) rotateY(-42deg);
+    -moz-transform: perspective(500px) rotateY(-42deg);
+    -ms-transform: perspective(500px) rotateY(-42deg);
+    -o-transform: perspective(500px) rotateY(-42deg);
+  }
+}
+
+
+/* Motion in the logo ended */
+
