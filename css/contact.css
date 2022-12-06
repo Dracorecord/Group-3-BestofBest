@@ -240,7 +240,7 @@ body {
 
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1400px) {
     .resto .left2 {
         height: auto;
     }
@@ -263,7 +263,7 @@ body {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        height: 100%; 
+        height: auto; 
     }
     
 }
