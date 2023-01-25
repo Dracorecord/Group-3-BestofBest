@@ -1,0 +1,422 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+}
+
+/* Header part */
+.header-area {
+  background: #000;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 999;
+  border-bottom: #fff;
+}
+
+/* Inside the header */
+.header-container {
+  width: 100%;
+  margin: auto;
+  display: table;
+  background-color: #000;
+}
+
+.site-logo {
+  float: left;
+  font-family: 'Lexend', sans-serif;
+}
+
+.site-logo a {
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 550;
+  padding: 15px;
+  font-style: italic;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-logo span {
+  color: #fb2525;
+  font-family: 'Poppins', sans-serif;
+}
+
+#site-logo-color i img {
+  width: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Menu Bar */
+.mobile-nav {
+  display: none;
+}
+
+.site-nav-menu {
+  float: right;
+  padding-top: 10px;
+}
+
+.primary-menu {
+  list-style: none;
+}
+
+/* Nag-line na 'yong list in a row */
+.primary-menu li {
+  display: inline-block;
+  margin: 21px 5px;
+}
+
+.primary-menu a {
+  color: #ffc107;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  transition: 0.5s;
+}
+
+.primary-menu a:hover,
+.primary-menu .active {
+  color: #fb2525;
+}
+
+
+/* Red underline in this part */
+.primary-menu li a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fb2525;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.primary-menu li a:hover:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+.primary-menu li .active:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+/*  Wala pang menu bar here */
+.mobile-nav {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.accordion .accordion-body:hover {
+    font-weight: bold;
+    color: black;
+    background: rgb(247, 247, 171);
+    background-blend-mode: luminosity;
+}
+
+.accordion .button:hover {
+    color: white;
+}
+
+.accordion {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 15%;
+}
+
+/* 
+.bestChefs {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    float: left;
+    padding: 5px;
+    margin: 1px;
+}
+
+.chef::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ */
+
+/*
+.col-md-4{
+ 
+}*/
+
+
+
+
+.flip-box {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: rgb(73, 66, 3);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+  .flip-box2 {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  
+  .flip-box-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box2:hover .flip-box-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front2, .flip-box-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front2 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back2 {
+    background-color: rgb(73, 66, 3);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+  .flip-box3 {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  
+  .flip-box-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box3:hover .flip-box-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front3, .flip-box-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front3 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: rgb(73, 66, 3);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  @media only screen  and (max-width: 766px) {
+    .site-nav-menu {
+        float: none;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        left: 0;
+        top: 85px;
+        padding: 30px 0px 19px 0px;
+        border-top: 2px solid #fb2525;
+        /* Clip path kung saan ilalagay ang menu */
+        clip-path: circle(0% at 50% 0%);
+        transition: all 0.5s;
+    }
+  
+    /* Nawala ang li rito na part */
+    .primary-menu li {
+        display: block;
+        text-align: center;
+        margin: 25px 5px;
+        font-size: 25px;
+    }
+    /* Menu bar lumabas na rito */
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu {
+        clip-path: circle(112% at 99% 0%);
+    }
+    .primary-menu li a:after {
+        display: none;
+    }
+}
+
+
+
+.mt-4 .btn {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+
+
+
+
+/* Motion in the logo started */
+
+.cols-md-4 {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  transform: perspective(500px) rotateY(-42deg);
+  -webkit-transform: perspective(500px) rotateY(-42deg);
+  -moz-transform: perspective(500px) rotateY(-42deg);
+  -ms-transform: perspective(500px) rotateY(-42deg);
+  -o-transform: perspective(500px) rotateY(-42deg);
+  animation-name: rotate-windows;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.cols-md-4 {
+  background-color: #00abef00;
+  width: 400px;
+  height: 400px;
+}
+
+ @keyframes rotate-windows { 
+  0% {
+    transform: perspective(500px) rotateY(-42deg);
+    -webkit-transform: perspective(500px) rotateY(-42deg);
+    -moz-transform: perspective(500px) rotateY(-42deg);
+    -ms-transform: perspective(500px) rotateY(-42deg);
+    -o-transform: perspective(500px) rotateY(-42deg);
+  }
+  50% {
+    transform: perspective(500px) rotateY(0deg);
+    -webkit-transform: perspective(500px) rotateY(0deg);
+    -moz-transform: perspective(500px) rotateY(0deg);
+    -ms-transform: perspective(500px) rotateY(0deg);
+    -o-transform: perspective(500px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(500px) rotateY(-42deg);
+    -webkit-transform: perspective(500px) rotateY(-42deg);
+    -moz-transform: perspective(500px) rotateY(-42deg);
+    -ms-transform: perspective(500px) rotateY(-42deg);
+    -o-transform: perspective(500px) rotateY(-42deg);
+  }
+}
+
+
+/* Motion in the logo ended */
+

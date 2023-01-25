@@ -1,0 +1,471 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+.header-area {
+  background: #000;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 999;
+  border-bottom: #fff;
+}
+
+/* Inside the header */
+.header-container {
+  width: 100%;
+  margin: auto;
+  display: table;
+  background-color: #000;
+}
+
+.site-logo {
+  float: left;
+  font-family: 'Lexend', sans-serif;
+}
+
+.site-logo a {
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 550;
+  padding: 15px;
+  font-style: italic;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-logo span {
+  color: #fb2525;
+  font-family: 'Poppins', sans-serif;
+}
+
+#site-logo-color i img {
+  width: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Menu Bar */
+.mobile-nav {
+  display: none;
+}
+
+.site-nav-menu {
+  float: right;
+  padding-top: 10px;
+}
+
+.primary-menu {
+  list-style: none;
+}
+
+/* Nag-line na 'yong list in a row */
+.primary-menu li {
+  display: inline-block;
+  margin: 21px 5px;
+}
+
+.primary-menu a {
+  color: #ffc107;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  transition: 0.5s;
+}
+
+.primary-menu a:hover,
+.primary-menu .active {
+  color: #fb2525;
+}
+
+
+/* Red underline in this part */
+.primary-menu li a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fb2525;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.primary-menu li a:hover:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+.primary-menu li .active:after {
+  width: 100%;
+  color: #fb2525;
+}
+
+/*  Wala pang menu bar here */
+.mobile-nav {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+/*
+section nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+section nav .logo img{
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+section nav ul{
+  list-style: none;
+}
+
+section nav ul li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+section nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.1s;
+}
+
+section nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+  width: 100%;
+}
+
+section nav ul li a:hover{
+  color: #fac031;
+}
+
+section nav .icon i{
+  font-size: 18px;
+  color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section nav .icon i:hover{
+  color: #fac031;
+ } */
+
+/*Menu*/
+
+.menu{
+  width: 100%;
+  padding: 70px 0;
+}
+
+.menu h1{
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.menu h1 span{
+  color: #fac031;
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.menu h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.menu .menu_box{
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card{
+  width: 325px;
+  height: 480px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu .menu_box .menu_card .menu_image{
+  width: 300px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img{
+  transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card{
+  width: 45px;
+  height: 45px;
+  float: right;
+  position: relative;
+  top: -240px;
+  right: -8px;
+  opacity: 0;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+  position: relative;
+  top: -240px;
+  right: 20px;
+  opacity: 1;
+}
+
+.menu .menu_box .menu_card .small_card i{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
+  color: #000;
+  cursor: pointer;
+  text-shadow: 0 0 6px #000;
+  transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .small_card i:hover{
+  color: #fac031;
+}
+
+.menu .menu_box .menu_card .menu_info h2{
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 20px;
+  color: #fac031;
+}
+
+.menu .menu_box .menu_card .menu_info p{
+  text-align: center;
+  margin: 8px;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+.menu .menu_box .menu_card .menu_info h3{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon{
+  color: #fac031;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  background: wheat;
+  padding: 8px;
+  margin: 0 80px;
+  transition: 0.3s;
+}
+
+
+
+/*Drinks*/
+
+.Drinks{
+  width: 100%;
+  padding: 70px 0;
+}
+
+.Drinks h1{
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Drinks h1 span{
+  margin-left: 15px;
+  color: #fac031;
+  font-family: mv boli;
+}
+
+.Drinks h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.Drinks .Drinks_image_box{
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.Drinks .Drinks_image_box .Drinks_image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.Drinks .Drinks_image_box .Drinks_image img{
+  width: 100%;
+  transition: .3s;
+}
+
+.Drinks .Drinks_image_box .Drinks_image:hover img{
+  opacity: 0.4;
+}
+
+.Drinks .Drinks_image_box .Drinks_image h3{
+  position: absolute;
+  font-size: 35px;
+  margin-bottom: 130px;
+  color: #fac031;
+  font-family: polo;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.Drinks .Drinks_image_box .Drinks_image:hover h3{
+  opacity: 1;
+}
+
+.Drinks .Drinks_image_box .Drinks_image p{
+  position: absolute;
+  width: 400px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  line-height: 22px;
+  opacity: 0;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.Drinks .Drinks_image_box .Drinks_image:hover p{
+  opacity: 1;
+}
+
+.Drinks .Drinks_image_box .Drinks_image .Drinks_btn{
+  position: absolute;
+  margin-top: 180px;
+  color: #000;
+  background: #fac031;
+  padding: 7px 25px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(45px);
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.Drinks .Drinks_image_box .Drinks_image:hover .Drinks_btn{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media only screen  and (max-width: 766px) {
+  .site-nav-menu {
+      float: none;
+      position: absolute;
+      background: #000;
+      width: 100%;
+      left: 0;
+      top: 85px;
+      padding: 30px 0px 19px 0px;
+      border-top: 2px solid #fb2525;
+      /* Clip path kung saan ilalagay ang menu */
+      clip-path: circle(0% at 50% 0%);
+      transition: all 0.5s;
+  }
+
+  /* Nawala ang li rito na part */
+  .primary-menu li {
+      display: block;
+      text-align: center;
+      margin: 25px 5px;
+      font-size: 25px;
+  }
+  /* Menu bar lumabas na rito */
+  .mobile-nav {
+      display: block;
+  }
+
+  .mobile-menu {
+      clip-path: circle(112% at 99% 0%);
+  }
+  .primary-menu li a:after {
+      display: none;
+  }
+}
