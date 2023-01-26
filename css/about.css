@@ -12,6 +12,7 @@ html {
 body {
   font-size: 18px;
   font-family: 'Abel', sans-serif;
+  
 }
 
 /* Header part */
@@ -177,11 +178,6 @@ body {
     display: table;
 }
  */
-
-/*
-.col-md-4{
- 
-}*/
 
 
 
@@ -419,4 +415,35 @@ body {
 
 
 /* Motion in the logo ended */
+
+/* CSS code for the search icon */
+/* .search-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.search-icon i {
+  font-size: 20px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  opacity: 10%;
+}
+
 
